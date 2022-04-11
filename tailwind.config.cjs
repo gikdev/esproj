@@ -6,7 +6,13 @@ module.exports = {
     './src/**/**/*.{svelte,js,ts}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'fira-code': ['Fira Code', 'monospace'],
+        'fredoka-one': ['Fredoka One', 'cursive'],
+        poppins: ['Poppins', 'sans-serif']
+      }
+    },
   },
   plugins: [
     require("daisyui"),
