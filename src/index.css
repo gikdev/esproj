@@ -1,4 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Fredoka+One&family=Poppins:wght@300;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply text-primary-content;
+  }
+  .btn.btn-outline {
+    @apply border-primary-content;
+  }
+  .btn.btn-outline:hover {
+    @apply bg-primary-content;
+  }
+}

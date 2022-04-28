@@ -4,16 +4,15 @@
     { content: 'Pricing', id: 1},
     { content: 'Download', id: 2},
   ]
-  const calc_vw = () => Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-  let vw = calc_vw();
-  const brand_classes = 'btn btn-ghost text-3xl text-info hover:bg-info hover:text-primary-content'
-  window.addEventListener('resize', () => vw = calc_vw())
-  $: console.log(vw)
+  // const calc_vw = () => Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  // let vw = calc_vw();
+  // window.addEventListener('resize', () => vw = calc_vw())
+  // $: console.log(vw)
 </script>
 
 
 
-{#if vw < 350}
+<!-- {#if vw < 350}
 
 <nav class="navbar">
   <div class="flex-1">
@@ -40,19 +39,19 @@
   </div>
 </div>
 
-{:else}
+{:else} -->
 
-<nav class="navbar">
+<nav class="navbar font-poppins">
   <div class="flex-1">
-    <a href='.' class={brand_classes}>ES</a>
+    <a href='.' class='btn btn-ghost font-fredoka-one text-3xl text-base-300 hover:text-primary-content'>ES</a>
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal p-0">
       {#each links as link}
-      <li><a href="." class="hover:text-info">{link.content}</a></li>
+        <li><a href="." class="hover:text-primary-content">{link.content}</a></li>
       {/each}
     </ul>
   </div>
 </nav>
 
-{/if}
+<!-- {/if} -->
