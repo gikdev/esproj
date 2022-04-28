@@ -15,3 +15,6 @@
     @apply bg-primary-content;
   }
 }
+* {
+  outline: 1px dotted gray;
+}
