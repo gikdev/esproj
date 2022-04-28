@@ -33,7 +33,7 @@
   <div class="drawer-side">
     <label for="my-drawer" class="drawer-overlay"></label>
     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
-      {#each links as link, i}
+      {#each links as link}
         <li><a href="." class="hover:text-info active:text-primary-content">{link.content}</a></li>
       {/each}
     </ul>
@@ -48,7 +48,7 @@
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal p-0">
-      {#each links as link, i}
+      {#each links as link}
       <li><a href="." class="hover:text-info">{link.content}</a></li>
       {/each}
     </ul>
